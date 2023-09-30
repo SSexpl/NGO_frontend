@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 const Signup=()=>
 {
+  const apiBaseUrl = process.env.REACT_APP_API_KEY || "https://ngo-backend-zv1a.onrender.com";
     const [details,setDetails]=useState({
         email:'',
         password:''
@@ -12,7 +13,7 @@ const Signup=()=>
     {
       event.preventDefault();
       console.log(details);
-      const ans=await axios.post("http://localhost:5000/signup",details);
+      const ans=await axios.post(`${apiBaseUrl}/signup`,details);
       console.log(ans);
       if(ans.data.state=="success")
       {
