@@ -77,7 +77,7 @@ const Blog=()=> {
         <h1 className="text-gray-400">Blogs Section</h1>
             
         <div className="w-full h-full bg-slate-900">
-        <div className="container mx-auto px-4 py-8 grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div className="container mx-auto px-4 py-8 grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 transition duration-1000 ease-in-out ">
             
           {blogs.map((blog) => (
             <BlogCard

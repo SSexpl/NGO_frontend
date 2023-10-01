@@ -30,20 +30,9 @@ export function Carousel() {
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className='w-full h-full rounded-2xl border-solid border-2 border-sky-500 bg-center bg-cover duration-500 '
       ></div>
-      <div  className='h-52 relative bottom-[32%] text-white bg-slate-500 rounded-2xl p-5 bg-opacity-50' >
+      <div  className='h-52 relative bottom-[32%] text-white bg-slate-500 rounded-2xl p-5 bg-opacity-50 overflow-auto duration-500' >
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-          Voluptate, eos, eum mollitia inventore commodi consectetur 
-          placeat veniam quaerat illo dolor sint distinctio ducimus ea excepturi? 
-          Magni commodi maxime molestiae excepturi!
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-          Voluptate, eos, eum mollitia inventore commodi consectetur 
-          placeat veniam quaerat illo dolor sint distinctio ducimus ea excepturi? 
-          Magni commodi maxime molestiae excepturi!
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-          Voluptate, eos, eum mollitia inventore commodi consectetur 
-          placeat veniam quaerat illo dolor sint distinctio ducimus ea excepturi? 
-          Magni commodi maxime molestiae excepturi!
+        {slides[currentIndex].data}
         </p>
       </div>
       {/* Left Arrow */}

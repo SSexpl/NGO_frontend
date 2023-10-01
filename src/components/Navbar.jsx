@@ -43,7 +43,7 @@ const Navbar = () => {
       <ul
         className={`${
           showMenu ? 'block' : 'hidden'
-        } md:flex md:flex-row flex-col items-center md:inline-flex w-full md:items-center md:justify-end justify-center gap-6 p-x-5 space-x-5 justify-end p-5 text-2xl bg-gradient-to-r from-zinc-700 to-black text-white hover:cursor-pointer top-[100%] md:visible transition-all duration-500 ease-out`}
+        } md:flex md:flex-row flex-col items-center md:inline-flex w-full md:items-center md:justify-end justify-center gap-6 p-x-5 space-x-5 justify-end p-5 text-2xl bg-gradient-to-r from-zinc-700 to-black text-white hover:cursor-pointer top-[100%] md:visible transition duration-1000 ease-in-out `}
       >
         <li className="hover:border-b-2 border-indigo-500 md:block">
           <Link to="/">Home</Link>
