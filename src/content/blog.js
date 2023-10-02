@@ -6,7 +6,15 @@
       content:
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vulputate id nunc ut euismod. Nullam eget purus et quam consectetur bibendum vel quis urna.
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vulputate id nunc ut euismod. Nullam eget purus et quam consectetur bibendum vel quis urna.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vulputate id nunc ut euismod. Nullam eget purus et quam consectetur bibendum vel quis urna.`,
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vulputate id nunc ut euismod. Nullam eget purus et quam consectetur bibendum vel quis urna.
+        The platform offers a free website and newsletter dedicated to teachers and instructors. Unlike many blogs with paywalls, 
+        there is no limit to your information consumption. The website features three weekly blogs written by industry experts and practitioners. 
+        You can find informative content on what will work in the classroom and online environments.
+Faculty Focus was the winner of the 2017 MERLOT Faculty Development Classics Award and is currently ranked no. Seven 
+in the Teach100 daily ranking of education blogs. With a focus on teaching strategies, Faculty Focus is an essential tool 
+for teachers to share what they implement in the classroom (online or F2F) and learn what other instructors are doing worldwide.
+
+`,
     },
     {
         id: 2,

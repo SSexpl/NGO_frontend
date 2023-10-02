@@ -21,25 +21,28 @@ const Blog=()=> {
   const EachBlogCard = () => {
     console.log(currentBlog.title);
     return (
-      <div className="fixed inset-0 flex items-center justify-center backdrop-blur-md  bg-opacity-50 bg-black z-50">
-        <div className="p-8 bg-white rounded-lg max-w-400">
-          <h2 className="text-xl font-semibold mb-4">{currentBlog.title}</h2>
-          {currentBlog.image && (
-              <img
-                src={currentBlog.image}
-                alt="Blog Thumbnail"
-                className="object-cover w-full h-48 rounded-t-lg my-5"
-              />
-            )}
-          <p>{currentBlog.content}</p>
-          <button
-            className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg"
-            onClick={handleCloseCard}
-          >
-            Close
-          </button>
-        </div>
-      </div>
+      <div className="fixed inset-0 flex items-center justify-center backdrop-blur-md bg-opacity-50 bg-black z-50">
+  <div className="p-8 bg-white rounded-lg max-w-400 overflow-auto">
+    <h2 className="text-xl font-semibold mb-4">{currentBlog.title}</h2>
+    {currentBlog.image && (
+      <img
+        src={currentBlog.image}
+        alt="Blog Thumbnail"
+        className="object-cover w-full h-48 rounded-t-lg my-5"
+      />
+    )}
+    <div className="overflow-auto max-h-80"> {/* Adjust max-h value as needed */}
+      <p>{currentBlog.content}</p>
+    </div>
+    <button
+      className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg"
+      onClick={handleCloseCard}
+    >
+      Close
+    </button>
+  </div>
+</div>
+
     );
   };
     const BlogCard = ({ image, title, content }) => {
