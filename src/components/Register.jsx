@@ -8,6 +8,7 @@ import {app,storage} from '../firebase'; //firebase instance for the purpose of 
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage"; // functions for storage
 export const Register =() =>
 {
+  const apiBaseUrl = process.env.REACT_APP_API_KEY || "https://ngo-backend-zv1a.onrender.com";
     const [data,setdata]=useState(""); // for image url setting
     const [user,setUser]=useState(false);
     useEffect(()=>
@@ -61,7 +62,7 @@ export const Register =() =>
       const senderob={...userDetails,Imurl:ans};
       console.log(senderob);
       try{
-      const response=await axios.post('http://localhost:5000/register',senderob);
+      const response=await axios.post(`${apiBaseUrl}/register`,senderob);
       console.log(response.data.state);
       if(response.data.state=="success")
       {
