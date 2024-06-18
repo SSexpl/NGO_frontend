@@ -5,7 +5,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 const Event =()=>
 {
-    const apiBaseUrl = process.env.REACT_APP_API_KEY || "https://ngo-backend-zv1a.onrender.com";
+    const apiBaseUrl = process.env.REACT_APP_API_KEY || "**";
     const [Event_list,setEvent]=useState([]);
     const [Warning,setWarning]=useState(false);
     const [Show,setShow]=useState(false);
