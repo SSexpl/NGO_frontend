@@ -8,7 +8,7 @@ import {app,storage} from '../firebase'; //firebase instance for the purpose of 
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage"; // functions for storage
 export const Register =() =>
 {
-  const apiBaseUrl = process.env.REACT_APP_API_KEY || "https://ngo-backend-zv1a.onrender.com";
+  const apiBaseUrl = process.env.REACT_APP_API_KEY || "**";
     const [data,setdata]=useState(""); // for image url setting
     const [user,setUser]=useState(false);
     useEffect(()=>
